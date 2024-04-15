@@ -27,7 +27,8 @@
     categories = ["Application" "Network" "WebBrowser"];
     mimeTypes = ["text/html" "text/xml"];
   };
-
+  
+  # modified in accordance to my preferences
   wrappedFox =
     (wrapFirefox cfg.package {
       # for a list of avialable policies, see:
@@ -39,18 +40,18 @@
         AppAutoUpdate = false;
         CaptivePortal = cfg.security.enableCaptivePortal;
         DisableFirefoxStudies = true;
-        DisableFirefoxAccounts = true;
+        DisableFirefoxAccounts = false;
         DisablePocket = true;
         DisableFormHistory = true;
         DisplayBookmarksToolbar = cfg.misc.displayBookmarksInToolbar;
         DontCheckDefaultBrowser = true;
         DisableSetDesktopBackground = true;
-        PasswordManagerEnabled = false;
-        PromptForDownloadLocation = true;
+        PasswordManagerEnabled = true;
+        PromptForDownloadLocation = false;
         SanitizeOnShutdown = cfg.security.sanitizeOnShutdown;
 
         NoDefaultBookmarks = true;
-        OfferToSaveLogins = false;
+        OfferToSaveLogins = true;
 
         EnableTrackingProtection = {
           Cryptomining = true;
