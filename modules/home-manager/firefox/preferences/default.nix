@@ -6,7 +6,7 @@
   inherit (cfg.theme.colors) background-darker background foreground;
 in {
   # Quality of life stuff
-  "browser.download.useDownloadDir" = false;
+  "browser.download.useDownloadDir" = true;
   "browser.aboutConfig.showWarning" = false;
   "browser.tabs.firefox-view" = false;
   "browser.toolbars.bookmarks.visibility" = cfg.misc.displayBookmarksInToolbar;
@@ -450,8 +450,9 @@ in {
   "layout.css.moz-document.content.enabled" = true;
 
   # Set default page colors
-  "browser.display.background_color.dark" = "#${background}";
-  "browser.display.focus_background_color.dark" = "#${background-darker}";
-  "browser.display.foreground_color.dark" = "#${foreground}";
-  "browser.display.focus_text_color" = "#${foreground}";
+  # disabled for the moment because I don't want funny colors
+  # "browser.display.background_color.dark" = "#${background}";
+  # "browser.display.focus_background_color.dark" = "#${background-darker}";
+  # "browser.display.foreground_color.dark" = "#${foreground}";
+  # "browser.display.focus_text_color" = "#${foreground}";
 }

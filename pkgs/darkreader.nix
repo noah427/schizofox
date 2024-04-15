@@ -2,8 +2,8 @@
   lib,
   fetchFromGitHub,
   buildNpmPackage,
-  background ? "1e1e2e",
-  foreground ? "cdd6f4",
+  background ? "181a1b",
+  foreground ? "e8e6e3",
   ...
 }: let
   version = "4.9.67";
