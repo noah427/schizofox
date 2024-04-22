@@ -178,10 +178,10 @@ in {
   # http://kb.mozillazine.org/Browser.send_pings
   "browser.send_pings" = false;
 
-  # Prevent sites from taking over copy/paste
-  "dom.event.clipboardevents.enabled" = false;
-  # Prevent sites from taking over right click
-  "dom.event.contextmenu.enabled" = false;
+  # Prevent sites from taking over copy/paste (idc I can always just inspect element to copy)
+  "dom.event.clipboardevents.enabled" = true;
+  # Prevent sites from taking over right click (no they can take over right click if they want)
+  "dom.event.contextmenu.enabled" = true;
 
   # Disable gamepad API to prevent USB device enumeration
   # https://www.w3.org/TR/gamepad/
